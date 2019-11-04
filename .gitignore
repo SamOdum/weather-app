@@ -32,6 +32,9 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+# production
+build
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -59,3 +62,11 @@ typings/
 
 # next.js build output
 .next
+
+# misc
+.DS_Store
+
+README2.md
+yarn.lock
+.yarnclean
+.vscode
