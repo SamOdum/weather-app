@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  background-color: $base-color;
+  background: linear-gradient(
+    to right,
+    rgb(121, 145, 187),
+    rgb(174, 201, 248),
+    rgb(148, 186, 252)
+  );
+}
