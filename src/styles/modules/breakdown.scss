@@ -1,5 +1,34 @@
 .breakdown-info {
-    width: 100%;
-    height: 40%;
-    background-color: teal;
+  width: 100%;
+  height: 44%;
+  background-color: teal;
+  display: flex;
+  flex-flow: row wrap;
+
+  &__details {
+    width: 50%;
+    background-color: brown;
+    // height: 100%;
+  }
+
+  &__timing {
+    width: 50%;
+    background-color: blueviolet;
+    // height: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    height: 52%;
+    flex-direction: column;
+
+    &__details {
+      width: 100%;
+      height: 26%;
+    }
+
+    &__timing {
+      width: 100%;
+      height: 74%;
+    }
+  }
 }

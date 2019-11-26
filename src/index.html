@@ -12,10 +12,40 @@
   <body>
     <div class="root">
       <div class="container">
-        <header></header>
-        <section class="display-info"></section>
-        <section class="breakdown-info"></section>
-        <footer></footer>
+        <header><h1>Wheather Forecast</h1></header>
+        <section class="display-info">
+          <div class="display-info__degree">
+            <p class="display-info__degree--location">Calabar, CRS, Nigeria</p>
+            <p class="display-info__degree--date">Tue November 26</p>
+            <p class="display-info__degree--condition">Drizzle</p>
+            <p class="display-info__degree--temp">42<sup>o</sup></p>
+          </div>
+          <div class="display-info__image">
+            <img
+              src="./images/wheather/SunnyDay.png"
+              alt="image of sun"
+              class="display-info__image--wheather"
+            />
+          </div>
+        </section>
+        <section class="breakdown-info">
+          <div class="breakdown-info__details">
+            <div><p>Precipitation 53%</p></div>
+            <div><p>Humidity 41%</p></div>
+            <div><p>Wind 32km/hr</p></div>
+          </div>
+          <div class="breakdown-info__timing">
+            <div class="breakdown-info__timing--segment">hourly weekly</div>
+            <div class="breakdown-info__timing--segment-table">
+              forecast data here
+            </div>
+          </div>
+        </section>
+        <footer>
+          <p class="copyright">&copy; Sam Odum, 2019. All rights reserved.</p>
+
+          <p class="darksky">Powered by Dark Sky</p>
+        </footer>
       </div>
     </div>
   </body>
