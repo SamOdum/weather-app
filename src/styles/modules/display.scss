@@ -1,6 +1,6 @@
 .display-info {
   width: 100%;
-  height: 42%;
+  height: 34%;
   background-color: skyblue;
   display: flex;
   flex-flow: row wrap;
@@ -8,26 +8,21 @@
   &__degree {
     background-color: pink;
     width: 50%;
-    // height: 100%;
+    height: 100%;
   }
 
   &__image {
     background-color: yellowgreen;
     width: 50%;
-    // height: 100%;
+    height: 100%;
+    display: block;
+
+    img {
+      width: 100%;
+    }
   }
 
-  @media only screen and (max-width: 600px) {
-    height: 34%;
-
-    &__degree {
-      width: 50%;
-      height: 100%;
-    }
-
-    &__image {
-      width: 50%;
-      height: 100%;
-    }
+  @media only screen and (min-width: 600px) {
+    height: 42%;
   }
 }
