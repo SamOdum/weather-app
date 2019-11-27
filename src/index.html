@@ -4,6 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Weather app</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,800&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./styles/index.css" />
     <!-- Include favicon here later -->
     <script src="./scripts/privateKeys.js"></script>
@@ -16,13 +20,13 @@
         <section class="display-info">
           <div class="display-info__degree">
             <p class="display-info__degree--location">Calabar, CRS, Nigeria</p>
-            <p class="display-info__degree--date">Tue November 26</p>
+            <p class="display-info__degree--date">Tue Nov 26</p>
             <p class="display-info__degree--condition">Drizzle</p>
             <p class="display-info__degree--temp">42<sup>o</sup></p>
           </div>
           <div class="display-info__image">
             <img
-              src="./images/wheather/SunnyDay.png"
+              src="./src/images/wheather/Rain.png"
               alt="image of sun"
               class="display-info__image--wheather"
             />
@@ -30,9 +34,9 @@
         </section>
         <section class="breakdown-info">
           <div class="breakdown-info__details">
-            <div><p>Precipitation 53%</p></div>
-            <div><p>Humidity 41%</p></div>
-            <div><p>Wind 32km/hr</p></div>
+            <p class="breakdon-info__details--precip">Precipitation 53%</p>
+            <p class="breakdon-info__details--humid">Humidity 41%</p>
+            <p class="breakdon-info__details--wind">Wind 32km/hr</p>
           </div>
           <div class="breakdown-info__timing">
             <div class="breakdown-info__timing--segment">hourly weekly</div>
