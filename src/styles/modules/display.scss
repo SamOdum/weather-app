@@ -1,5 +1,6 @@
 .display-info {
   // background-color: skyblue;
+  background-color: $base-color-dark;
   width: 100%;
   height: 34%;
   display: flex;
@@ -7,7 +8,6 @@
 
   &__degree {
     // background-color: pink;
-    background-color: $base-color-dark;
     width: 50%;
     padding: 2% 3%;
     height: 100%;
@@ -25,24 +25,23 @@
       margin: 1% 0 1%;
     }
     &--temp {
-      font-size: 400%;
+      z-index: 10;
+      font-size: 500%;
       font-weight: 600;
       margin: 1% 0 1%;
       -webkit-text-fill-color: white;
       -webkit-text-stroke: 1px black;
-
-      sup {
-        font-size: -300%;
-      }
     }
   }
 
   &__image {
     // background-color: yellowgreen;
-    background-color: $base-color-dark;
+    // background-color: $base-color-dark;
     width: 50%;
     height: 100%;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
     img {
       width: 100%;
@@ -51,5 +50,47 @@
 
   @media only screen and (min-width: 600px) {
     height: 42%;
+
+    &__degree {
+      // background-color: pink;
+      // background-color: $base-color-dark;
+      width: 50%;
+      padding: 2% 3%;
+      height: 100%;
+
+      &--location {
+        font-size: 100%;
+        font-weight: 600;
+        margin: 1% 0 1%;
+      }
+
+      &--date,
+      &--condition {
+        font-size: 100%;
+        font-weight: 200;
+        margin: 1% 0 1%;
+      }
+      &--temp {
+        font-size: 700%;
+        font-weight: 600;
+        margin: 1% 0 1%;
+        -webkit-text-fill-color: white;
+        -webkit-text-stroke: 1px black;
+      }
+    }
+
+    &__image {
+      // background-color: yellowgreen;
+      // background-color: $base-color-dark;
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 80%;
+      }
+    }
   }
 }
