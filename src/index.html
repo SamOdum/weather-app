@@ -39,10 +39,45 @@
             <p class="breakdown-info__details--wind">Wind 32km/hr</p>
           </div>
           <div class="breakdown-info__timing">
-            <div class="breakdown-info__timing--segment">hourly weekly</div>
+            <ul class="nav-tab">
+              <li class="nav-item">
+                <a
+                  class="breakdown-info__timing--segment"
+                  data-toggle="tab"
+                  href="#weekly"
+                  >Hourly</a
+                >
+              </li>
+              <li class="nav-item ">
+                <a
+                  class="breakdown-info__timing--segment active"
+                  data-toggle="tab"
+                  href="#daily"
+                  >Weekly</a
+                >
+              </li>
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content">
+              <div
+                class="breakdown-info__timing--segment-table container active"
+                id="daily"
+              >
+                <table id="dailyForecast" width="100%"></table>
+              </div>
+              <div
+                class="breakdown-info__timing--segment-table container fade"
+                id="weekly"
+              >
+                <table id="weeklyForecast" width="100%"></table>
+              </div>
+            </div>
+
+            <!-- <div class="breakdown-info__timing--segment">hourly weekly</div>
             <div class="breakdown-info__timing--segment-table">
               forecast data here
-            </div>
+            </div> -->
           </div>
         </section>
         <footer>
